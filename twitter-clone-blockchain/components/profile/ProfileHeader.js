@@ -69,7 +69,9 @@ const ProfileHeader = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.header}>
-        <div onClick={() => router.push('/')} className={style.backButton}> {/**45:55 If I press take me to the home page */}
+        <div onClick={() => router.push('/')} className={style.backButton}>
+          {' '}
+          {/**45:55 If I press take me to the home page */}
           <BsArrowLeftShort />
         </div>
         <div className={style.details}>
@@ -78,17 +80,15 @@ const ProfileHeader = () => {
             {userData.tweets?.length} Tweets
           </div> */}
 
-        <div className={style.primary}>Mohamed Asjadh</div>
-          <div className={style.secondary}>
-            4 Tweets
-          </div>
+          <div className={style.primary}>Mohamed Asjadh</div>
+          <div className={style.secondary}>4 Tweets</div>
         </div>
       </div>
       <div className={style.coverPhotoContainer}>
         <img
           // src={userData.coverImage}
           src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"
-          alt='cover'
+          alt="cover"
           className={style.coverPhoto}
         />
       </div>
@@ -97,15 +97,13 @@ const ProfileHeader = () => {
           // className={
           //   currentUser.isProfileImageNft ? 'hex' : style.profileImageContainer
           // }
-          className={
-              isProfileImageNft ? 'hex' : style.profileImageContainer
-          }
+          className={isProfileImageNft ? 'hex' : style.profileImageContainer}
         >
           <img
             // src={userData.profileImage}
             // alt={userData.walletAddress}
-            src="https://media-exp1.licdn.com/dms/image/C5603AQFdx8bLItgPdQ/profile-displayphoto-shrink_200_200/0/1631714224306?e=1648080000&v=beta&t=P4adM8wGf6P-lM0rDCqhq3jYkZ8uvI-X2ci3yyne2BY"
-            alt='profile picture'
+            src="https://avatars.githubusercontent.com/u/85475496?v=4"
+            alt="profile picture"
             // className={
             //   currentUser.isProfileImageNft
             //     ? style.profileImageNft

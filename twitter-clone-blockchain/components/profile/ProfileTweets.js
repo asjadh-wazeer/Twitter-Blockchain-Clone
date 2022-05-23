@@ -9,24 +9,23 @@ const style = {
 }
 
 const tweets = [
-    { displayName: 'Asjadh',
-     userName: 'aaaaaaaaaaaaaaaaa',
-     avatar: 'https://media-exp1.licdn.com/dms/image/C5603AQFdx8bLItgPdQ/profile-displayphoto-shrink_200_200/0/1631714224306?e=1648080000&v=beta&t=P4adM8wGf6P-lM0rDCqhq3jYkZ8uvI-X2ci3yyne2BY',
-     text: 'gm',
-     isProfileImageNft: false,
-     timestamp: "2022-02-21T12:00:00.000Z",
- 
-     },
-     { displayName: 'Asjadh',
-     userName: 'aaaaaaaaaaaaaaaaa',
-     avatar: 'https://media-exp1.licdn.com/dms/image/C5603AQFdx8bLItgPdQ/profile-displayphoto-shrink_200_200/0/1631714224306?e=1648080000&v=beta&t=P4adM8wGf6P-lM0rDCqhq3jYkZ8uvI-X2ci3yyne2BY',
-     text: 'gm',
-     isProfileImageNft: false,
-     timestamp: "2022-02-21T12:00:00.000Z",
- 
-     }
- ]
-
+  {
+    displayName: 'Asjadh',
+    userName: 'aaaaaaaaaaaaaaaaa',
+    avatar: 'https://avatars.githubusercontent.com/u/85475496?v=4',
+    text: 'gm',
+    isProfileImageNft: false,
+    timestamp: '2022-02-21T12:00:00.000Z',
+  },
+  {
+    displayName: 'Asjadh',
+    userName: 'bbbbbb',
+    avatar: 'https://avatars.githubusercontent.com/u/85475496?v=4',
+    text: 'gm',
+    isProfileImageNft: false,
+    timestamp: '2022-02-21T12:00:00.000Z',
+  },
+]
 
 // interface Tweet {
 //   timestamp: string
@@ -43,31 +42,31 @@ const tweets = [
 // }
 
 const ProfileTweets = () => {
-//   const { currentUser } = useContext(TwitterContext)
-//   const [tweets, setTweets] = useState<Tweets>([
-//     {
-//       timestamp: '',
-//       tweet: '',
-//     },
-//   ])
-//   const [author, setAuthor] = useState<Author>({
-//     name: '',
-//     profileImage: '',
-//     walletAddress: '',
-//     isProfileImageNft: undefined,
-//   })
+  //   const { currentUser } = useContext(TwitterContext)
+  //   const [tweets, setTweets] = useState<Tweets>([
+  //     {
+  //       timestamp: '',
+  //       tweet: '',
+  //     },
+  //   ])
+  //   const [author, setAuthor] = useState<Author>({
+  //     name: '',
+  //     profileImage: '',
+  //     walletAddress: '',
+  //     isProfileImageNft: undefined,
+  //   })
 
-//   useEffect(() => {
-//     if (!currentUser) return
+  //   useEffect(() => {
+  //     if (!currentUser) return
 
-//     setTweets(currentUser.tweets)
-//     setAuthor({
-//       name: currentUser.name,
-//       profileImage: currentUser.profileImage,
-//       walletAddress: currentUser.walletAddress,
-//       isProfileImageNft: currentUser.isProfileImageNft,
-//     })
-//   }, [currentUser])
+  //     setTweets(currentUser.tweets)
+  //     setAuthor({
+  //       name: currentUser.name,
+  //       profileImage: currentUser.profileImage,
+  //       walletAddress: currentUser.walletAddress,
+  //       isProfileImageNft: currentUser.isProfileImageNft,
+  //     })
+  //   }, [currentUser])
 
   return (
     <div className={style.wrapper}>
@@ -95,12 +94,13 @@ const ProfileTweets = () => {
         <Post
           key={index}
           displayName="Mohamed Asjadh"
-          userName={`${tweet.userName.slice(
-            0,
-            4,
-          )}...${tweet.userName.slice(41)}`}
+          userName={`${tweet.userName.slice(0, 4)}...${tweet.userName.slice(
+            41
+          )}`}
           text={tweet.tweet}
-          avatar={tweet.profileImage}
+          // avatar={tweet.profileImage}
+          avatar={tweet.avatar}
+          
           timestamp={tweet.timestamp}
           isProfileImageNft={tweet.isProfileImageNft}
         />

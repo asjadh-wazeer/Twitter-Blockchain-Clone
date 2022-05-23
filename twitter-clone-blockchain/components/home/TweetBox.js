@@ -70,7 +70,7 @@ function TweetBox() {
     <div className={style.wrapper}>
       <div className={style.tweetBoxLeft}>
         <img
-          src="https://media-exp1.licdn.com/dms/image/C5603AQFdx8bLItgPdQ/profile-displayphoto-shrink_200_200/0/1631714224306?e=1648080000&v=beta&t=P4adM8wGf6P-lM0rDCqhq3jYkZ8uvI-X2ci3yyne2BY"
+          src="https://media-exp1.licdn.com/dms/image/C5603AQGxfGt4yQnBRA/profile-displayphoto-shrink_100_100/0/1647323485620?e=2147483647&v=beta&t=Smu4EU5zyXHq0yFDAWQAA73z9P4jPV6nzjmAZZC6y_c"
           className={style.profileImage}
           alt="Profile Image"
         />
@@ -79,7 +79,7 @@ function TweetBox() {
       <div className={style.tweetBoxRight}>
         <form>
           <textarea
-            onChange={e => setTweetMessage(e.target.value)}
+            onChange={(e) => setTweetMessage(e.target.value)}
             value={tweetMessage}
             placeholder="What's happening?"
             className={style.inputField}
@@ -94,12 +94,11 @@ function TweetBox() {
               <MdOutlineLocationOn className={style.icon} />
             </div>
             <button
-              type='submit'
-              onClick={event => submitTweet(event)}
+              type="submit"
+              onClick={(event) => submitTweet(event)}
               disabled={!tweetMessage}
-
               //If I type anything, Button color -> Dark Blue 28:50
-              className={`${style.submitGeneral} ${ 
+              className={`${style.submitGeneral} ${
                 tweetMessage ? style.activeSubmit : style.inactiveSubmit
               }`}
             >
@@ -112,4 +111,4 @@ function TweetBox() {
   )
 }
 
-export default TweetBox
+export default TweetBox;

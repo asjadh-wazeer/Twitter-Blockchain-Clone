@@ -7,21 +7,22 @@ import { BsStars } from 'react-icons/bs'
 
 const style = {
     wrapper: `flex-[2] border-r border-l border-[#38444d] `,
-//   wrapper: `flex-[2] border-r border-l border-[#38444d] overflow-y-scroll`,
+  // wrapper: `flex-[2] border-r border-l border-[#38444d] overflow-y-scroll`,
   header: `sticky top-0 bg-[#15202b] z-10 p-4 flex justify-between items-center`,
   headerTitle: `text-xl font-bold`,
 }
 
 
 const tweets = [
-   { displayName: 'Asjadh',
-    userName: 'aaaaaaaaaaaaaaaaa',
-    avatar: 'https://media-exp1.licdn.com/dms/image/C5603AQFdx8bLItgPdQ/profile-displayphoto-shrink_200_200/0/1631714224306?e=1648080000&v=beta&t=P4adM8wGf6P-lM0rDCqhq3jYkZ8uvI-X2ci3yyne2BY',
+  {
+    displayName: 'Asjadh',
+    userName: 'mohamed_asjadh',
+    avatar:
+      'https://media-exp1.licdn.com/dms/image/C5603AQGxfGt4yQnBRA/profile-displayphoto-shrink_100_100/0/1647323485620?e=2147483647&v=beta&t=Smu4EU5zyXHq0yFDAWQAA73z9P4jPV6nzjmAZZC6y_c',
     text: 'gm',
     isProfileImageNft: false,
-    timestamp: "2022-02-21T12:00:00.000Z",
-
-    }
+    timestamp: '2022-02-21T12:00:00.000Z',
+  },
 ]
 
 
