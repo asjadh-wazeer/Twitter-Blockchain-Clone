@@ -42,7 +42,7 @@ const style = {
 const ProfileHeader = () => {
   // const { currentAccount, currentUser } = useContext(TwitterContext)
   const router = useRouter()
-  const isProfileImageNft = false;
+  const isProfileImageNft = false
   const currentAccount = '02020202022'
   // const [userData, setUserData] = useState<UserData>({
   //   name: '',
@@ -139,4 +139,4 @@ const ProfileHeader = () => {
   )
 }
 
-export default ProfileHeader;
+export default ProfileHeader

@@ -1,9 +1,10 @@
-import React from 'react'
+// import sanityClient from '@sanity/client'
 
-const client = () => {
-  return (
-    <div>client</div>
-  )
-}
+// export const client = sanityClient({
+//   // projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
 
-export default client
+//   dataset: 'production',
+//   apiVersion: 'v1',
+//   // token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
+//   useCdn: false,
+// })

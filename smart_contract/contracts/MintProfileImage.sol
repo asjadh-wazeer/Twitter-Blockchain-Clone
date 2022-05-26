@@ -21,7 +21,7 @@ contract ProfileImageNfts is ERC721, Ownable {
 
     constructor() ERC721("ProfileImageNfts","PIN"){}
 
-    function _setTokenURI(uint256 tokenId, string memory _tokenURI) internal {
+    function _setTokenURI(uint256 tokenId, string memory _tokenURI) internal { 
         _tokenURIs[tokenId] = _tokenURI;
     }
 
